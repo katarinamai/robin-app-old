@@ -4,7 +4,8 @@ import { Input, Button } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
-
+import BotaoQuadrado from '../../components/botao-quadrado'
+import Identifier from '../Identifier'
 
 import api from '../../services/api';
 
@@ -14,9 +15,9 @@ export default function Login() {
     const navigation = useNavigation();
     const [loading, setLoading] = useState(false);
 
-    function navigateToDetail(login) {
-        navigation.navigate('Detail', { login });
-    }
+    // function navigateToDetail(login) {
+    //     navigation.navigate('Identifier', { login });
+    // }
 
 
     return(
@@ -28,12 +29,9 @@ export default function Login() {
                 placeholder='senha'
                 secureTextEntry={true}
              />
-            <Button
+            <BotaoQuadrado
                 title="ENTRAR"
-                buttonStyle={{
-                    backgroundColor: "#F7931E"
-                 }}
-                 onPress={() => navigation.navigate('Detail', { login })}
+                onPress={() => {navigation.navigate('Identifier')}}
             />
             
         </View>
