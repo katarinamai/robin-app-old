@@ -7,12 +7,22 @@ import styles from './styles';
 import BotaoRetangular from '../../components/botao-retangular'
 import BotaoRedondo from '../../components/botao-redondo'
 import BotaoBack from '../../components/botao-back'
+import Lista from '../../components/lista'
 
 
 import api from '../../services/api';
 
 export default function Identifier() {
-
+ const list = [
+  {
+    title: 'Appointments',
+    icon: 'av-timer'
+  },
+  {
+    title: 'Trips',
+    icon: 'flight-takeoff'
+  },
+]
 
     return(
         <View style={styles.container} >
@@ -21,6 +31,8 @@ export default function Identifier() {
             title="oisedoven\sldvek"/>
             <BotaoRedondo/>
             <BotaoBack/>
+            <Lista
+            />
         </View>
     );
 }
