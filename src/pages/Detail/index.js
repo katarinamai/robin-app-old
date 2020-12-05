@@ -1,5 +1,5 @@
 import React from 'react';
-import { Feather } from '@expo/vector-icons';
+//import { Feather } from '@expo/vector-icons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { View, Text, Image, TouchableOpacity, Linking } from 'react-native';
 import styles from './style';
@@ -35,7 +35,7 @@ export default function Detail() {
             <View style={styles.header}>
                 <Image source={logoImg} />
                 <TouchableOpacity onPress={navigateBack}>
-                    <Feather name="arrow-left" size={28} color="#E82041" />
+                
                 </TouchableOpacity>
             </View>
 
