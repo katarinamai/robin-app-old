@@ -9,6 +9,7 @@ export default StyleSheet.create({
         paddingHorizontal: 24,
         paddingTop: Constants.statusBarHeight + 20,
         backgroundColor: Colors.PRIMARY_BACKGROUND,
+        alignItems: 'center',
     },
     // header: {
     //     flexDirection: 'row',
