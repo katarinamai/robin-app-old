@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
-import { Input, Button } from 'react-native-elements';
+import { Input, Button, Divider } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
@@ -32,6 +32,7 @@ export default function Identifier({ navigation: { goBack } }) {
                         <Text style={styles.subText} > Valor da dívida: R$345,35</Text>
                     </View>
                 </View>
+                <Divider style={ styles.divider}/>
                 <View style={styles.item}>
                     <BotaoRedondo
                     onPress={() => {navigation.navigate('Objective')}}/>
@@ -41,6 +42,7 @@ export default function Identifier({ navigation: { goBack } }) {
                         <Text style={styles.subText} >Valor da dívida: R$345,35</Text>
                     </View>
                 </View>
+                <Divider style={ styles.divider} />
                 <View style={styles.item}>
                     <BotaoRedondo
                     onPress={() => {navigation.navigate('Objective')}}/>

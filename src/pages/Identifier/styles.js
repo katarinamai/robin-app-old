@@ -40,6 +40,9 @@ export default StyleSheet.create({
         color: '#a8a8a8',
         marginLeft: 20,
     },
+    divider: {
+        marginBottom:10,
+    }
 
     // header: {
     //     flexDirection: 'row',

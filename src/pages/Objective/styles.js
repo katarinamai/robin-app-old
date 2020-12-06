@@ -16,15 +16,34 @@ export default StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'flex-start',
         width: '100%',
-        marginBottom: 100
+        marginBottom: 90
     },
     list: {
         width: '100%',
     },
-    text: {
+    cashback: {
+        marginTop:50,
+        marginBottom:50,
         color: '#F7931E',
     },
-    
+    content: {
+        width: '90%',
+        marginLeft: 10,
+
+    },
+    titulo: {
+        opacity: 0.5, 
+        marginLeft:10,
+        color: 'black'
+    },
+    divida: {
+        color: '#F7931E',
+        fontSize:36,
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: {width: -1, height: 1},
+        textShadowRadius: 1,
+        marginBottom:30,
+    }
     // header: {
     //     flexDirection: 'row',
     //     justifyContent: 'space-between',

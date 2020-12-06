@@ -13,7 +13,7 @@ import BotaoQuadrado from '../../components/botao-quadrado'
 export default function Objective({ navigation: { goBack } }) {
 
     const navigation = useNavigation();
-    const [user, setUser] = useState();
+    const [date, setDate] = useState('01-02-2021');
 
     return(
         <View style={styles.container} >
@@ -21,33 +21,39 @@ export default function Objective({ navigation: { goBack } }) {
                 <BotaoBack
                 onPress={() => goBack()}/>
             </View>
-            <Text style={styles.text} >R$ 345,35</Text>
-            <View>
-              <Text>Dê um nome para a dívida</Text>
+            <Text style={styles.titulo}>Valor da dívida</Text>
+            <Text style={styles.divida} >R$ 345,35</Text>
+            <View style={styles.content}>
+              <Text style={styles.titulo}>Dê um nome para a dívida</Text>
               <Input
                 placeholder='Dê um nome para o seu objetivo'
                 defaultValue="Dívida 1"
+                containerStyle={{margin:0}}
+              />
+              <Text style={styles.titulo}>Data final da dívida</Text>
+              <DatePicker
+                locale='pt-br'
+                iconSource={""}
+                style={{width: '111%'}}
+                mode="date"
+                placeholder="Data final do seu objetivo."
+                format="DD-MM-yyyy"
+                minDate={new Date()}
+                maxDate="31-12-2090"
+                date={date}
+                confirmBtnText="Confirm"
+                cancelBtnText="Cancel"
+                customStyles={{
+                  dateInput: {
+                    marginLeft: 10,
+                    width: '100%'
+                  }
+                  // ... You can check the source to find the other keys.
+                }}
+                onDateChange={(date) => {setDate(date)}}
               />
             </View>
-            <DatePicker
-              iconSource={""}
-              style={{width: '100%'}}
-              mode="date"
-              placeholder="Data final do seu objetivo."
-              format="YYYY-MM-DD"
-              minDate="2016-05-01"
-              maxDate="2016-06-01"
-              confirmBtnText="Confirm"
-              cancelBtnText="Cancel"
-              customStyles={{
-                dateInput: {
-                  marginLeft: 36
-                }
-                // ... You can check the source to find the other keys.
-              }}
-              onDateChange={(date) => {this.setState({date: date})}}
-            />
-            <Text style={styles.text}>CASHBACK: R$ 17,25</Text>
+            <Text style={styles.cashback}>CASHBACK: R$ 17,25</Text>
             <BotaoQuadrado
                 title="CADASTRAR"
                 onPress={() => {navigation.navigate('Identifier')}}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 import { Input, Button } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
@@ -22,18 +22,30 @@ export default function Login() {
 
     return(
         <View style={styles.container} >
-            <Input
-             placeholder='e-mail'
-             />
-            <Input
-                placeholder='senha'
-                secureTextEntry={true}
-             />
-            <BotaoQuadrado
-                title="ENTRAR"
-                onPress={() => {navigation.navigate('Identifier')}}
-            />
-            
+            <View style={styles.content}>
+                <Image source={logoImg} style={styles.logo} />
+                <Input
+                placeholder='e-mail'
+                />
+                <Input
+                    placeholder='senha'
+                    secureTextEntry={true}
+                />
+                <BotaoQuadrado
+                    title="ENTRAR"
+                    onPress={() => {navigation.navigate('Identifier')}}
+                />
+                <Button
+                    buttonStyle={{
+                        backgroundColor: "transparent",
+                    }}
+                    titleStyle={{
+                        color:'black'
+                    }}
+                    containerStyle={{marginTop:150}}
+                    title="Criar Conta"
+                />
+            </View>
         </View>
     );
 }

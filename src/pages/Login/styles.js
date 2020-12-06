@@ -11,6 +11,16 @@ export default StyleSheet.create({
         backgroundColor: Colors.PRIMARY_BACKGROUND,
         alignItems: 'center',
     },
+    logo: {
+        width: 178,
+        height: 58 ,
+        marginBottom:70,
+    },
+    content: {
+        marginTop:100,
+        width:'100%',
+        alignItems: 'center',
+    },
     // header: {
     //     flexDirection: 'row',
     //     justifyContent: 'space-between',
