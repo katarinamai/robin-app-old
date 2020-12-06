@@ -9,8 +9,8 @@ import Detail from './pages/Detail';
 import PagarDivida from './pages/PagarDivida';
 import Divida from './pages/Divida';
 import Principal from './pages/Principal';
-import RegisterObjective from './pages/RegisterObjective';
-import Goal from './pages/Goal';
+import CadastrarObjetivo from './pages/CadastrarObjetivo';
+import ObjetivoAlcancado from './pages/ObjetivoAlcancado';
 
 export default function Routes() {
     return(
@@ -21,8 +21,8 @@ export default function Routes() {
                 <AppStack.Screen name="PagarDivida" component={PagarDivida} />
                 <AppStack.Screen name="Divida" component={Divida} />
                 <AppStack.Screen name="Principal" component={Principal} />
-                <AppStack.Screen name="RegisterObjective" component={RegisterObjective} />
-                <AppStack.Screen name="Goal" component={Goal} />
+                <AppStack.Screen name="CadastrarObjetivo" component={CadastrarObjetivo} />
+                <AppStack.Screen name="ObjetivoAlcancado" component={ObjetivoAlcancado} />
             </AppStack.Navigator>
         </NavigationContainer>
     );

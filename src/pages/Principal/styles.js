@@ -46,8 +46,19 @@ export default StyleSheet.create({
     },
     tituloInvest: {
         fontSize: 20,
+        alignItems: 'flex-start',
     },
     rendimento: {
         color: '#F7931E',
+    },
+    botaoInvestimento: {
+        flexDirection: 'column',
+        height:70,
+        backgroundColor: 'transparent',
+        borderColor: 'transparent',
+        borderWidth: 0,
+        borderRadius:0,
+        elevation:0,
+        alignItems: 'flex-start',
     }
 });

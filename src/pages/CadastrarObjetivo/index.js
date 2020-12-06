@@ -10,7 +10,7 @@ import DatePicker from 'react-native-datepicker';
 import BotaoQuadrado from '../../components/botao-quadrado'
 
 
-export default function Objective({ navigation: { goBack } }) {
+export default function CadastrarObjetivo({ navigation: { goBack } }) {
 
     const navigation = useNavigation();
     const [date, setDate] = useState();

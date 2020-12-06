@@ -10,7 +10,7 @@ import BotaoBack from '../../components/botao-back'
 
 import api from '../../services/api';
 
-export default function Identifier({ navigation: { goBack } }) {
+export default function PagarDivida({ navigation: { goBack } }) {
     const navigation = useNavigation();
 
 
@@ -23,7 +23,7 @@ export default function Identifier({ navigation: { goBack } }) {
             <Text style={styles.textBox}>Identificamos algumas dívidas.</Text>
             <Text style={styles.textBox}>Vamos liquidar isso?</Text>
             <View style={styles.content}>
-                <View style={styles.item}>
+                <View style={styles.item}> 
                     <BotaoRedondo
                     onPress={() => {navigation.navigate('Divida')}}/>
                     <View>                        
