@@ -7,7 +7,7 @@ import styles from './styles';
 import api from '../../services/api';
 import BotaoRetangular from '../../components/botao-retangular'
 
-export default function Principle({ navigation: { goBack } }) {
+export default function RegisterObjective({ navigation: { goBack } }) {
 
     const navigation = useNavigation();
 
@@ -37,8 +37,7 @@ export default function Principle({ navigation: { goBack } }) {
         <View style={styles.content}>
             <View style={styles.objetivo}>
                 <BotaoRetangular
-                title="Adicionar objetivo"
-                onPress={() => {navigation.navigate('RegisterObjective')}}/>
+                title="Adicionar objetivo"/>
             </View>
             <Text style={styles.saldo}>R$ 102,03</Text>
             <Text style={styles.subTitle}>Disponível para investimento</Text>

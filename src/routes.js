@@ -9,6 +9,7 @@ import Detail from './pages/Detail';
 import Identifier from './pages/Identifier';
 import Objective from './pages/Objective';
 import Principle from './pages/Principle';
+import RegisterObjective from './pages/RegisterObjective';
 
 export default function Routes() {
     return(
@@ -19,6 +20,7 @@ export default function Routes() {
                 <AppStack.Screen name="Identifier" component={Identifier} />
                 <AppStack.Screen name="Objective" component={Objective} />
                 <AppStack.Screen name="Principle" component={Principle} />
+                <AppStack.Screen name="RegisterObjective" component={RegisterObjective} />
             </AppStack.Navigator>
         </NavigationContainer>
     );
