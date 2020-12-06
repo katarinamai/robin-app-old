@@ -24,7 +24,8 @@ export default function Identifier({ navigation: { goBack } }) {
             <Text style={styles.textBox}>Vamos liquidar isso?</Text>
             <View style={styles.content}>
                 <View style={styles.item}>
-                    <BotaoRedondo/>
+                    <BotaoRedondo
+                    onPress={() => {navigation.navigate('Objective')}}/>
                     <View>                        
                         <Text style={styles.text} > Dívida identificada</Text>
                         <Text style={styles.subText} > Banco 1</Text>
@@ -32,7 +33,8 @@ export default function Identifier({ navigation: { goBack } }) {
                     </View>
                 </View>
                 <View style={styles.item}>
-                    <BotaoRedondo/>
+                    <BotaoRedondo
+                    onPress={() => {navigation.navigate('Objective')}}/>
                     <View>
                         <Text style={styles.text} >Dívida identificada</Text>
                         <Text style={styles.subText} >Banco 2 </Text>
@@ -40,7 +42,8 @@ export default function Identifier({ navigation: { goBack } }) {
                     </View>
                 </View>
                 <View style={styles.item}>
-                    <BotaoRedondo/>
+                    <BotaoRedondo
+                    onPress={() => {navigation.navigate('Objective')}}/>
                 <Text style={{marginTop: 30, marginLeft: 20}} >Cadastrar outra dívida</Text>
                 </View>
             </View>
