@@ -40,7 +40,8 @@ export default function Cadastro() {
                         color:'black'
                     }}
                     containerStyle={{marginTop:150}}
-                    title="Criar Conta"
+                    title="Já possui uma conta? Clique aqui."
+                    onPress={() => {navigation.navigate('Login')}}
                 />
             </View>
         </View>
