@@ -4,30 +4,46 @@ import { Input, Button } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
-import BotaoRetangular from '../../components/botao-retangular'
 import BotaoRedondo from '../../components/botao-redondo'
 import BotaoBack from '../../components/botao-back'
-import Lista from '../../components/lista'
 
 
 import api from '../../services/api';
 
-export default function Identifier() {
- const list = [
-  {
-    title: 'Appointments',
-    icon: 'av-timer'
-  },
-  {
-    title: 'Trips',
-    icon: 'flight-takeoff'
-  },
-]
+export default function Identifier({ navigation: { goBack } }) {
+    const navigation = useNavigation();
+
 
     return(
         <View style={styles.container} >
-            <Text>Identificamos algumas dívidas.Vamos liquidar isso?</Text>
-            
+            <View style={styles.back}>
+                <BotaoBack
+                onPress={() => goBack()}/>
+            </View>
+            <Text style={styles.textBox}>Identificamos algumas dívidas.</Text>
+            <Text style={styles.textBox}>Vamos liquidar isso?</Text>
+            <View style={styles.content}>
+                <View style={styles.item}>
+                    <BotaoRedondo/>
+                    <View>                        
+                        <Text style={styles.text} > Dívida identificada</Text>
+                        <Text style={styles.subText} > Banco 1</Text>
+                        <Text style={styles.subText} > Valor da dívida: R$345,35</Text>
+                    </View>
+                </View>
+                <View style={styles.item}>
+                    <BotaoRedondo/>
+                    <View>
+                        <Text style={styles.text} >Dívida identificada</Text>
+                        <Text style={styles.subText} >Banco 2 </Text>
+                        <Text style={styles.subText} >Valor da dívida: R$345,35</Text>
+                    </View>
+                </View>
+                <View style={styles.item}>
+                    <BotaoRedondo/>
+                <Text style={{marginTop: 30, marginLeft: 20}} >Cadastrar outra dívida</Text>
+                </View>
+            </View>
         </View>
     );
 }

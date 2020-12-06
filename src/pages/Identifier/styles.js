@@ -11,6 +11,36 @@ export default StyleSheet.create({
         backgroundColor: Colors.SECOND_BACKGROUND,
         alignItems: 'center',
     },
+
+    back: {
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        width: '100%',
+        marginBottom: 100
+    },
+
+    content: {
+        flexDirection: 'column',
+        marginTop: 30,
+        marginLeft:10,
+        
+    },
+    item: {
+        flexDirection: 'row',
+        marginBottom: 20,
+        width: 300,
+        justifyContent: 'flex-start',
+    },
+
+    text: {
+        marginLeft: 20,
+        marginTop:10,
+    },
+    subText: {
+        color: '#a8a8a8',
+        marginLeft: 20,
+    },
+
     // header: {
     //     flexDirection: 'row',
     //     justifyContent: 'space-between',

@@ -11,7 +11,7 @@ import api from '../../services/api';
 
 export default function Login() {
 
-    const [login, setLogin] = useState();
+    // const [login, setLogin] = useState();
     const navigation = useNavigation();
     const [loading, setLoading] = useState(false);
 
