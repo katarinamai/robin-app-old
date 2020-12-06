@@ -1,9 +1,8 @@
 {
   "expo": {
-    "name": "Be The Hero",
-    "slug": "bethehero",
+    "name": "Robin",
+    "slug": "robin",
     "privacy": "public",
-    "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
       "android",
@@ -15,7 +14,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#E02041"
+      "backgroundColor": "#343434"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

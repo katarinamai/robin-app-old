@@ -21,14 +21,14 @@ export default function Objective({ navigation: { goBack } }) {
                 <BotaoBack
                 onPress={() => goBack()}/>
             </View>
-            <Input
-              placeholder='Dê um nome para o seu objetivo'
-              defaultValue="Dívida 1"
-            />
-            <Input
-              placeholder=''
-              defaultValue="R$ 345,35"
-            />
+            <Text style={styles.text} >R$ 345,35</Text>
+            <View>
+              <Text>Dê um nome para a dívida</Text>
+              <Input
+                placeholder='Dê um nome para o seu objetivo'
+                defaultValue="Dívida 1"
+              />
+            </View>
             <DatePicker
               iconSource={""}
               style={{width: '100%'}}
