@@ -53,7 +53,7 @@ export default function CadastrarObjetivo({ navigation: { goBack } }) {
                 <View style={styles.cadastrar}>
                     <BotaoQuadrado
                     title="cadastrar"
-                    onPress={() => {navigation.navigate('Principle')}}
+                    onPress={() => {navigation.navigate('Principal')}}
                     />
                 </View>
         </View>
