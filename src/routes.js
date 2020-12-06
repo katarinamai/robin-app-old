@@ -5,7 +5,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 const AppStack = createStackNavigator();
 
 import Login from './pages/Login';
-import Detail from './pages/Detail';
 import PagarDivida from './pages/PagarDivida';
 import Divida from './pages/Divida';
 import Principal from './pages/Principal';
@@ -13,13 +12,13 @@ import CadastrarObjetivo from './pages/CadastrarObjetivo';
 import ObjetivoAlcancado from './pages/ObjetivoAlcancado';
 import Cadastro from './pages/Cadastro';
 import CadastrarBanco from './pages/CadastrarBanco';
+import OnboardingObjetivos from './pages/OnboardingObjetivos';
 
 export default function Routes() {
     return(
         <NavigationContainer>
             <AppStack.Navigator screenOptions={{headerShown: false}} >
                 <AppStack.Screen name="Login" component={Login} />
-                <AppStack.Screen name="Detail" component={Detail} />
                 <AppStack.Screen name="PagarDivida" component={PagarDivida} />
                 <AppStack.Screen name="Divida" component={Divida} />
                 <AppStack.Screen name="Principal" component={Principal} />
@@ -27,6 +26,7 @@ export default function Routes() {
                 <AppStack.Screen name="ObjetivoAlcancado" component={ObjetivoAlcancado} />
                 <AppStack.Screen name="Cadastro" component={Cadastro} />
                 <AppStack.Screen name="CadastrarBanco" component={CadastrarBanco} />
+                <AppStack.Screen name="OnboardingObjetivos" component={OnboardingObjetivos} />
             </AppStack.Navigator>
         </NavigationContainer>
     );

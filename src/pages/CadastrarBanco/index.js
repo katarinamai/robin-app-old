@@ -21,7 +21,9 @@ export default function CadastrarBanco({ navigation: { goBack } }) {
             </View>
            <Text style={styles.titulo}>Cadastrar conta bancária</Text>
            <BotaoRetangular 
-           title="Conta"/>
+           title="Conta"
+           onPress={() => {navigation.navigate('OnboardingObjetivos')}}
+           />
            <Button 
             style={styles.bancosContent}
             onPress={() => {navigation.navigate('PagarDivida')}}>
