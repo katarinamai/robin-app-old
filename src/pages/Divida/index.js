@@ -7,7 +7,7 @@ import styles from './styles';
 import BotaoBack from '../../components/botao-back';
 import api from '../../services/api';
 import DatePicker from 'react-native-datepicker';
-import BotaoQuadrado from '../../components/botao-quadrado'
+import BotaoQuadrado from '../../components/botao-quadrado';
 
 
 export default function Divida({ navigation: { goBack } }) {

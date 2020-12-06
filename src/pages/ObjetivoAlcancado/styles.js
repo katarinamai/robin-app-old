@@ -17,14 +17,4 @@ export default StyleSheet.create({
         width: '100%',
         marginBottom: 90
     },
-    subTitle: {
-        color: '#a8a8a8',
-    },
-    cashback: {
-        color: '#F7931E',
-        marginTop: 60,
-    },
-    cadastrar: {
-        marginTop:50,
-    }
 });
