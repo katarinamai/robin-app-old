@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image} from 'react-native';
-import { Input } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 import styles from './styles';
 import BotaoBack from '../../components/botao-back';
@@ -10,7 +9,7 @@ import Img from '../../assets/undraw_stepping_up_g6oo.png';
 
 
 export default function ObjetivoAlcancado({ navigation: { goBack } }) {
-
+    const navigation = useNavigation()
     
     return(
         <View style={styles.container} >
@@ -19,13 +18,19 @@ export default function ObjetivoAlcancado({ navigation: { goBack } }) {
                 onPress={() => goBack()}/>
             </View>
             <Image source={Img} style={styles.logo} />
-            <Text>Parabéns</Text>
-            <Text>Obetivo Alcançado</Text>
-            <Text>R$ 1.000,00</Text>
-            <Text>Vamos continuar trabalhando</Text>
-            <Text>no seu futuro?</Text>
+            <Text style={styles.parabens}>Parabéns</Text>
+            <View style={styles.textContent}>
+                <Text>Obetivo Alcançado</Text>
+                <Text>R$ 1.000,00</Text>
+                <View style={styles.textSubContent}>
+                    <Text>Vamos continuar trabalhando</Text>
+                    <Text>no seu futuro?</Text>
+                </View>
+            </View>
             <BotaoRetangular
-            title="Adicionar objetivo"/>
+                title="Adicionar objetivo"
+                onPress={() => {navigation.navigate('CadastrarObjetivo')}}
+                />
         </View>
     );
 }
