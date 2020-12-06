@@ -27,12 +27,7 @@ export default function Identifier() {
     return(
         <View style={styles.container} >
             <Text>Identificamos algumas dívidas.Vamos liquidar isso?</Text>
-            <BotaoRetangular
-            title="oisedoven\sldvek"/>
-            <BotaoRedondo/>
-            <BotaoBack/>
-            <Lista
-            />
+            
         </View>
     );
 }
