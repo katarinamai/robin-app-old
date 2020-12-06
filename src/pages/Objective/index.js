@@ -33,8 +33,7 @@ export default function Objective({ navigation: { goBack } }) {
               <Text style={styles.titulo}>Data final da dívida</Text>
               <DatePicker
                 locale='pt-br'
-                iconSource={""}
-                style={{width: '111%'}}
+                style={{width: '100%'}}
                 mode="date"
                 placeholder="Data final do seu objetivo."
                 format="DD-MM-yyyy"
@@ -56,7 +55,7 @@ export default function Objective({ navigation: { goBack } }) {
             <Text style={styles.cashback}>CASHBACK: R$ 17,25</Text>
             <BotaoQuadrado
                 title="CADASTRAR"
-                onPress={() => {navigation.navigate('Identifier')}}
+                onPress={() => {navigation.navigate('Principle')}}
             />
         </View>
     );
