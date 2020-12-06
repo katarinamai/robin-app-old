@@ -34,23 +34,36 @@ export default function Principle({ navigation: { goBack } }) {
             </Button>
         </Right>
         </Header>
-        <View>
-            <BotaoRetangular
-            title="Adicionar objetivo"/>
-            <Text>R$ 102,03</Text>
-            <Text>Disponível para investimento</Text>
-            <Text>Cashback acumulado: R$ 17,00</Text>
-            <Text>Investimento 1</Text>
-            <Text>+ 0,00</Text>
-            <Divider style={ styles.divider}/>
-            <Text>Investimento 2</Text>
-            <Text>+ 0,00</Text>
-            <Divider style={ styles.divider}/>
-            <Text>Fundo emergencial</Text>
-            <Text>+ 0,00</Text>
-            <Divider style={ styles.divider}/>
-            <Text>Dívida 1</Text>
-            <Text>+ 0,00</Text>
+        <View style={styles.content}>
+            <View style={styles.objetivo}>
+                <BotaoRetangular
+                title="Adicionar objetivo"/>
+            </View>
+            <Text style={styles.saldo}>R$ 102,03</Text>
+            <Text style={styles.subTitle}>Disponível para investimento</Text>
+            <Text style={styles.cashback}>Cashback acumulado: R$ 17,25</Text>
+            <View style={styles.investimentosContainer}>
+                <Text style={styles.tituloInvest}>Investimento 1</Text>
+                <Text style={styles.rendimento}>+ 0,00 acumulado</Text>
+                <Text style={styles.rendimento}>+ 0,00 rendimento</Text>
+                <Divider style={ styles.divider}/>
+                <Text style={styles.tituloInvest}>Investimento 2</Text>
+                <View style={{flexDirection: 'row', width: '100%',}}>
+                    <View>
+                        <Text style={styles.rendimento}>+ 950,00 acumulado</Text>
+                        <Text style={styles.rendimento}>+ 50,00 rendimento</Text>
+                    </View>
+                    <Icon name="md-checkmark-circle" style={{marginLeft:100, color:'green'}} />
+                </View>
+                <Divider style={ styles.divider}/>
+                <Text style={styles.tituloInvest}>Fundo emergencial</Text>
+                <Text style={styles.rendimento}>+ 0,00 acumulado</Text>
+                <Text style={styles.rendimento}>+ 0,00 rendimento</Text>
+                <Divider style={ styles.divider}/>
+                <Text style={styles.tituloInvest}>Dívida 1</Text>
+                <Text style={styles.rendimento}>+ 0,00 acumulado</Text>
+                <Text style={styles.rendimento}>+ 0,00 rendimento</Text>
+            </View>
         </View>
   </View>
     );

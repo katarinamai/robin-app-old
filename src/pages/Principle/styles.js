@@ -15,5 +15,39 @@ export default StyleSheet.create({
     header: {
         backgroundColor: '#F7931E',
         
+    },
+    content: {
+        alignItems: 'center',
+    },
+    objetivo: {
+        width:200,
+        marginTop:30,
+    },
+    saldo: {
+        color: '#F7931E',
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: {width: -1, height: 1},
+        textShadowRadius: 1,
+        fontSize: 36,
+        marginTop:50,
+    },
+    subTitle: {
+        color: '#a8a8a8',
+    },
+    cashback: {
+        color: '#F7931E',
+    },
+    investimentosContainer: {
+        width: '70%',
+        marginLeft: 20,
+        marginTop:30,
+        height: '55%',
+        justifyContent: 'space-between', 
+    },
+    tituloInvest: {
+        fontSize: 20,
+    },
+    rendimento: {
+        color: '#F7931E',
     }
 });
