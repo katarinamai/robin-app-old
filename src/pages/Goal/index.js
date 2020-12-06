@@ -7,10 +7,10 @@ import styles from './styles';
 import BotaoBack from '../../components/botao-back';
 import api from '../../services/api';
 import DatePicker from 'react-native-datepicker';
-import BotaoQuadrado from '../../components/botao-quadrado'
+import BotaoRetangular from '../../components/botao-retangular'
 
 
-export default function Objective({ navigation: { goBack } }) {
+export default function Goal({ navigation: { goBack } }) {
 
     const navigation = useNavigation();
     const [date, setDate] = useState();
@@ -52,9 +52,7 @@ export default function Objective({ navigation: { goBack } }) {
                 <Text style={styles.cashback}>CASHBACK: </Text>
                 <View style={styles.cadastrar}>
                     <BotaoQuadrado
-                    title="cadastrar"
-                    onPress={() => {navigation.navigate('Principle')}}
-                    />
+                    title="cadastrar"/>
                 </View>
         </View>
     );

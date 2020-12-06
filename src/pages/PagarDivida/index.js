@@ -25,7 +25,7 @@ export default function Identifier({ navigation: { goBack } }) {
             <View style={styles.content}>
                 <View style={styles.item}>
                     <BotaoRedondo
-                    onPress={() => {navigation.navigate('Objective')}}/>
+                    onPress={() => {navigation.navigate('Divida')}}/>
                     <View>                        
                         <Text style={styles.text} > Dívida identificada</Text>
                         <Text style={styles.subText} > Banco 1</Text>
@@ -35,7 +35,7 @@ export default function Identifier({ navigation: { goBack } }) {
                 <Divider style={ styles.divider}/>
                 <View style={styles.item}>
                     <BotaoRedondo
-                    onPress={() => {navigation.navigate('Objective')}}/>
+                    onPress={() => {navigation.navigate('Divida')}}/>
                     <View>
                         <Text style={styles.text} >Dívida identificada</Text>
                         <Text style={styles.subText} >Banco 2 </Text>
@@ -45,7 +45,7 @@ export default function Identifier({ navigation: { goBack } }) {
                 <Divider style={ styles.divider} />
                 <View style={styles.item}>
                     <BotaoRedondo
-                    onPress={() => {navigation.navigate('Objective')}}/>
+                    onPress={() => {navigation.navigate('Divida')}}/>
                 <Text style={{marginTop: 30, marginLeft: 20}} >Cadastrar outra dívida</Text>
                 </View>
             </View>

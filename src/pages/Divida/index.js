@@ -55,7 +55,7 @@ export default function Objective({ navigation: { goBack } }) {
             <Text style={styles.cashback}>CASHBACK: R$ 17,25</Text>
             <BotaoQuadrado
                 title="CADASTRAR"
-                onPress={() => {navigation.navigate('Principle')}}
+                onPress={() => {navigation.navigate('Principal')}}
             />
         </View>
     );

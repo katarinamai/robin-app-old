@@ -5,7 +5,6 @@ import { useNavigation } from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
 import BotaoQuadrado from '../../components/botao-quadrado'
-import Identifier from '../Identifier'
 
 import api from '../../services/api';
 
@@ -33,7 +32,7 @@ export default function Login() {
                 />
                 <BotaoQuadrado
                     title="ENTRAR"
-                    onPress={() => {navigation.navigate('Identifier')}}
+                    onPress={() => {navigation.navigate('PagarDivida')}}
                 />
                 <Button
                     buttonStyle={{
