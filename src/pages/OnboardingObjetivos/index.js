@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text } from "react-native";
-import { Image } from "react-native-elements";
+import { View, Text, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Img from '../../assets/onboard.png';
 import styles from "./styles";
@@ -16,31 +15,36 @@ export default function OnboardingObjetivos({ navigation: { goBack } }) {
       <View style={styles.back}>
         <BotaoBack onPress={() => goBack()} />
       </View>
-      <Image source={{uri: '../../assets/onboard.png'}} style={{ width: 299, height: 169 }} />
-      
-      <Text style={styles.titulo}>Vamos investir no seu futuro</Text>
-      <Text style={styles.titulo}>
-        Processamos seus dados e identificamos seu perfi financeiro. Cadastre
-        seus objetivos financeiros.
-      </Text>
-      <BotaoRetangular
-        title="PAGAR DIVIDAS"
-        onPress={() => {
-          navigation.navigate("Principal");
-        }}
-      />
-      <BotaoRetangular
-        title="FUNDO EMERGENCIAL"
-        onPress={() => {
-          navigation.navigate("Principal");
-        }}
-      />
-      <BotaoRetangular
-        title="OUTRO OBJETIVO"
-        onPress={() => {
-          navigation.navigate("Principal");
-        }}
-      />
-    </View>
+      <Image source={Img} style={{ width: 299, height: 169 }} />
+      <View style={styles.titulo}>
+        <Text >Vamos investir</Text>
+        <Text>no seu futuro?</Text>
+      </View>
+          <View style={styles.content}>
+            <Text> Processamos seus dados e </Text>
+            <Text> identificamos seu perfil financeiro.</Text>
+            <Text>Cadastre seus objetivos financeiros.</Text>
+          </View>
+          <View style={styles.botoes}>
+            <BotaoRetangular
+                title="PAGAR DIVIDAS"
+                onPress={() => {
+                navigation.navigate("PagarDivida");
+                }}
+            />
+            <BotaoRetangular
+                title="FUNDO EMERGENCIAL"
+                onPress={() => {
+                navigation.navigate("CadastrarObjetivo");
+                }}
+            />
+            <BotaoRetangular
+                title="OUTRO OBJETIVO"
+                onPress={() => {
+                navigation.navigate("CadastrarObjetivo");
+                }}
+            />
+          </View>
+      </View>
   );
 }

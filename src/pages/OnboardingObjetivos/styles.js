@@ -31,10 +31,16 @@ export default StyleSheet.create({
         marginLeft: 10,
 
     },
-    titulo: {
-        opacity: 0.5, 
+    titulo: { 
         marginLeft:10,
-        color: 'black'
+        color: 'black',
+        position: 'absolute',
+        left:     200,
+        top:      300,
+    },
+    titulo2: {
+        opacity: 0.5, 
+        color: 'black',
     },
     divida: {
         color: '#F7931E',
@@ -43,68 +49,14 @@ export default StyleSheet.create({
         textShadowOffset: {width: -1, height: 1},
         textShadowRadius: 1,
         marginBottom:30,
+    },
+    content: {
+        alignItems: 'center',
+        marginTop: 20,
+        marginBottom: 20,
+    },
+    botoes: {
+        height: '30%',
+        justifyContent: 'space-between',
     }
-    // header: {
-    //     flexDirection: 'row',
-    //     justifyContent: 'space-between',
-    //     alignItems: 'center'
-    // },
-    // headerText: {
-    //     fontSize:15,
-    //     color: '#737380',
-    // },
-
-    // headerTextBold: {
-    //     fontWeight: 'bold'
-    // },
-
-    // title: {
-    //     fontSize: 30,
-    //     marginBottom: 16,
-    //     marginTop: 48,
-    //     color: '#13131A',
-    //     fontWeight: 'bold'
-    // },
-
-    // description: {
-    //     fontSize: 16,
-    //     lineHeight: 24,
-    //     color: '#737380'
-    // },
-
-    // incidentList: {
-    //     marginTop: 32,
-    // },
-
-    // incident: {
-    //     padding: 24,
-    //     borderRadius: 8,
-    //     backgroundColor: '#FFF',
-    //     marginBottom: 16,
-    // },
-
-    // incidentProperty: {
-    //     fontSize:14,
-    //     color: '#41414d',
-    //     fontWeight: 'bold'
-    // },
-
-    // incidentValue: {
-    //     marginTop: 8,
-    //     fontSize: 15,
-    //     marginBottom: 24,
-    //     color: '#737380'
-    // },
-
-    // detailsButton: {
-    //     flexDirection: 'row',
-    //     justifyContent: 'space-between',
-    //     alignItems: 'center'
-    // },
-
-    // detailsButtonText: {
-    //     color: '#E02041',
-    //     fontSize: 15,
-    //     fontWeight: 'bold'
-    // }
 });
