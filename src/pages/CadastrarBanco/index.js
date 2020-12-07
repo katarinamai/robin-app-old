@@ -22,7 +22,7 @@ export default function CadastrarBanco({ navigation: { goBack } }) {
            <Text style={styles.titulo}>Cadastrar conta bancária</Text>
            <BotaoRetangular 
            title="Conta"
-           onPress={() => {navigation.navigate('OnboardingObjetivos')}}
+           onPress={() => {navigation.navigate('Autenticacao')}}
            />
            <Button 
             style={styles.bancosContent}

@@ -13,6 +13,7 @@ import ObjetivoAlcancado from './pages/ObjetivoAlcancado';
 import Cadastro from './pages/Cadastro';
 import CadastrarBanco from './pages/CadastrarBanco';
 import OnboardingObjetivos from './pages/OnboardingObjetivos';
+import Autenticacao from './pages/Autenticacao';
 
 export default function Routes() {
     return(
@@ -27,6 +28,7 @@ export default function Routes() {
                 <AppStack.Screen name="Cadastro" component={Cadastro} />
                 <AppStack.Screen name="CadastrarBanco" component={CadastrarBanco} />
                 <AppStack.Screen name="OnboardingObjetivos" component={OnboardingObjetivos} />
+                <AppStack.Screen name="Autenticacao" component={Autenticacao} />
             </AppStack.Navigator>
         </NavigationContainer>
     );
