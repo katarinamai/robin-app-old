@@ -29,7 +29,7 @@ export default function Onboarding3({ navigation: { goBack } }) {
       <View style={styles.cadastrar}>
         <BotaoRetangular
         title="DEPOSITAR DINHEIRO"
-        onPress={() => {navigation.navigate('CadastrarBanco')}}
+        onPress={() => {navigation.navigate('Depositar')}}
         />
       </View>
        <Button
