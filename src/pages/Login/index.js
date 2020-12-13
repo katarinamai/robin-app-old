@@ -27,7 +27,7 @@ export default function Login() {
                 />
                 <BotaoQuadrado
                     title="ENTRAR"
-                    onPress={() => {navigation.navigate('Onboarding1')}}
+                    onPress={() => {navigation.navigate('Loading')}}
                 />
                 <Button
                     buttonStyle={{

@@ -17,6 +17,7 @@ import Onboarding2 from './pages/Onboarding2';
 import Onboarding3 from './pages/Onboarding3';
 import Depositar from './pages/Depositar';
 import Autenticacao from './pages/Autenticacao';
+import Loading from './pages/Loading';
 
 export default function Routes() {
     return(
@@ -40,6 +41,7 @@ export default function Routes() {
                 <AppStack.Screen name="Onboarding3" component={Onboarding3} />
                 <AppStack.Screen name="Depositar" component={Depositar} />
                 <AppStack.Screen name="Autenticacao" component={Autenticacao} />
+                <AppStack.Screen name="Loading" component={Loading} />
             </AppStack.Navigator>
         </NavigationContainer>
     );
