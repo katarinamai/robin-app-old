@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator, CardStyleInterpolators } from "@react-navigation/stack";
 
 const AppStack = createStackNavigator();
 
@@ -21,7 +21,12 @@ import Autenticacao from './pages/Autenticacao';
 export default function Routes() {
     return(
         <NavigationContainer>
-            <AppStack.Navigator screenOptions={{headerShown: false}} >
+            <AppStack.Navigator screenOptions={{
+                headerShown: false,
+                gestureEnabled: true,
+                gestureDirection: "horizontal",
+                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS}} >
+                    
                 <AppStack.Screen name="Login" component={Login} />
                 <AppStack.Screen name="PagarDivida" component={PagarDivida} />
                 <AppStack.Screen name="Divida" component={Divida} />
